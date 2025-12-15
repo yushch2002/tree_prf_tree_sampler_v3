@@ -23,7 +23,8 @@ This shows the *asymptotic* speed advantage cleanly:
 python main.py --device cpu --tree balanced --normalize_inputs --vocab 200000 --d_model 256 --D 256 --trials 3000 --quality_vocab 5000
 ```
 
-### 2) semantic tree + L traversals, resample
+### 2) Semantic tree + L traversals, resample
+```bash
 python main.py --device cpu --tree semantic --normalize_inputs \
   --vocab 50000 --d_model 256 --D 256 --trials 2000 --quality_vocab 5000 \
   --kmeans_iters 10 --L 20 --L_strategy resample
